@@ -1,4 +1,3 @@
-use football;
 insert into Player values
 (1,'Lionel Messi','1987-06-24',2004,10),
 (2,'Cristiano Ronaldo','1985-02-05',2002,7),
