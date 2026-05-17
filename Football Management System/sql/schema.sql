@@ -50,3 +50,13 @@ assis_referee_id_1 int,
 assis_referee_id_2 int,
 primary key(match_id)
 );
+
+create table Player_Team(
+ player_id int ,
+ team_id int not null,
+ from_date date,
+ to_date date,
+ primary key(player_id, team_id, from_date),
+ foreign key(player_id) references Player(player_id),
+ foreign key(team_id) references Team(team_id)
+);
